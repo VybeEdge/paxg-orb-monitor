@@ -1,0 +1,2 @@
+entry_time_utc,side,entry,sl,tp,exit_time_utc,exit,result,R,had_alert,100_before,1000_before,10000_before,100_pnl,1000_pnl,10000_pnl,100_after,1000_after,10000_after
+2026-09-26T13:19:00Z,SELL,4279.6,4280.007142857143,4278.175000000001,2026-09-26T15:42:00Z,4280.007142857143,SL,-1.0,False,100.0,1000.0,10000.0,-1.0,-10.0,-100.0,99.0,990.0,9900.0
