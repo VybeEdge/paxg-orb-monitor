@@ -1,0 +1,1 @@
+[2026-09-26 10:10:29 UTC] No new closed 1-min bars since last run - nothing to do.
