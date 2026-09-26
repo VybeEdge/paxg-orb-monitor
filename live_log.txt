@@ -1,1 +1,3 @@
 [2026-09-26 10:10:29 UTC] No new closed 1-min bars since last run - nothing to do.
+[2026-09-26 14:52:17 UTC] Range set: 4279.80-4279.90 (width 0.10, ATR15 0.41) -> TRADEABLE
+[2026-09-26 14:52:17 UTC] >>> SELL SIGNAL  entry~4279.60  SL 4280.01  TP 4278.18  (had_alert=False)
