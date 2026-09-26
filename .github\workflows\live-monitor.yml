@@ -1,0 +1,45 @@
+name: PAXGUSD ORB live monitor
+
+on:
+  schedule:
+    # Every 5 minutes (GitHub's fastest allowed schedule) from 12:00-16:55 UTC
+    # every day. This window generously covers New York 08:00am-11:30am-ish
+    # across both EST (UTC-5) and EDT (UTC-4), so it doesn't need editing
+    # twice a year for daylight saving - the script itself checks true New
+    # York time internally and does nothing outside the real trade window,
+    # so the extra runs outside it are cheap no-ops.
+    - cron: '*/5 12-16 * * *'
+  workflow_dispatch: {}   # lets you click "Run workflow" manually to test
+
+permissions:
+  contents: write   # needed so the job can commit the updated logs back
+
+concurrency:
+  group: paxg-orb-monitor
+  cancel-in-progress: false   # never cancel a run mid-write, just queue
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests pytz
+
+      - name: Run monitor
+        run: python delta_orb_action.py
+
+      - name: Commit updated logs
+        run: |
+          git config user.name "orb-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state.json live_log.txt alerts_log.csv trades_log.csv SUMMARY.md
+          git diff --cached --quiet || git commit -m "Log update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
