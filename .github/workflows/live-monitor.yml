@@ -2,13 +2,12 @@ name: PAXGUSD ORB live monitor
 
 on:
   schedule:
-    # Every 5 minutes (GitHub's fastest allowed schedule) from 12:00-16:55 UTC
-    # every day. This window generously covers New York 08:00am-11:30am-ish
-    # across both EST (UTC-5) and EDT (UTC-4), so it doesn't need editing
-    # twice a year for daylight saving - the script itself checks true New
-    # York time internally and does nothing outside the real trade window,
-    # so the extra runs outside it are cheap no-ops.
-    - cron: '*/5 12-16 * * *'
+    # Every 5 minutes, all day, every day (GitHub's fastest allowed native
+    # schedule interval - there is no faster native option). Not restricted to
+    # the NY trading session: PAXGUSD trades 24/7 as a crypto perpetual, so
+    # the price/equity chart stays live all day even though the strategy
+    # itself only opens ranges/trades/alerts during its own session window.
+    - cron: '*/5 * * * *'
   workflow_dispatch: {}   # lets you click "Run workflow" manually to test
 
 permissions:
