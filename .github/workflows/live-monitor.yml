@@ -40,6 +40,8 @@ jobs:
         run: |
           git config user.name "orb-monitor-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state.json live_log.txt alerts_log.csv trades_log.csv SUMMARY.md
+          for f in state.json live_log.txt alerts_log.csv trades_log.csv price_and_equity.csv SUMMARY.md; do
+            [ -f "$f" ] && git add "$f"
+          done
           git diff --cached --quiet || git commit -m "Log update $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
