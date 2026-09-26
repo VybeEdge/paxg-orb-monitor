@@ -11,8 +11,9 @@ data used here is Delta Exchange's public market data.
 WHY "STATELESS": every GitHub Actions run starts a brand-new, empty machine
 with no memory of the last run. So this script:
   1. loads state.json (committed in the repo) to see where it left off
-  2. re-fetches every 1-minute PAXGUSD candle from today's session start up
-     to now, from Delta's server (the authoritative, unchanging record)
+  2. re-fetches every 1-minute PAXGUSD candle since the last bar it processed,
+     from Delta's server (the authoritative, unchanging record) - all day,
+     every day, not just during the trading session
   3. replays only the candles it hasn't processed yet through the EXACT same
      bar-by-bar logic as the original backtest/live-monitor script
   4. saves its new position back to state.json
@@ -21,6 +22,18 @@ have computed for the same closed candles - see the chat explanation for why.
 The one real difference is notification timing (checked every few minutes
 here, not instantly), not the correctness of what gets logged.
 
+Fetching is intentionally NOT restricted to the ORB session window - it runs
+around the clock (see the workflow's cron) so the price/equity chart stays
+"live" all day, even though process_bar() itself only opens ranges/trades/
+alerts during the actual session (RANGE_START_H..TRADE_END_H, NY time) - that
+part of the logic is unchanged.
+
+This file doubles as the backtest engine: run_backtest.py imports it, points
+ATR_FN and the *_LOG file constants at a local OHLC lookup and backtest_*.csv
+filenames, and replays a full historical CSV bar-by-bar through the exact
+same process_bar() used live - so the backtest and the live monitor can never
+silently drift apart into two different implementations of "the strategy."
+
 FILES this writes/updates in the repo (the workflow commits them every run):
   state.json       - internal bookkeeping, not meant to be read by a person
   live_log.txt     - human-readable running narrative (open this to just read)
@@ -28,7 +41,16 @@ FILES this writes/updates in the repo (the workflow commits them every run):
                      whether a real breakout followed
   trades_log.csv   - every paper trade, with entry/exit/result/R, AND the
                      dollar effect on three simulated account sizes
+  price_and_equity.csv - one row per processed 1-min bar: PAXGUSD close +
+                     running % return (same for every balance tier, since
+                     they're all risking the same 1% - only the dollar
+                     amounts differ) + each tier's dollar balance. This is
+                     what a dashboard chart should plot.
   SUMMARY.md       - always-current headline stats, rewritten every run
+
+All timestamps written to the CSVs are UTC (ISO 8601, e.g. 2026-09-26T12:34:00Z)
+- unambiguous, so any viewer (dashboard, spreadsheet) can convert to whatever
+local time zone it needs (New York market time, IST, etc.) itself.
 """
 
 import csv
@@ -65,15 +87,21 @@ STATE_FILE = "state.json"
 LIVE_LOG = "live_log.txt"
 ALERTS_LOG = "alerts_log.csv"
 TRADES_LOG = "trades_log.csv"
+PRICE_LOG = "price_and_equity.csv"
 SUMMARY_FILE = "SUMMARY.md"
 
 TRADES_HEADER = (
-    ["entry_time", "side", "entry", "sl", "tp", "exit_time", "exit", "result", "R", "had_alert"]
+    ["entry_time_utc", "side", "entry", "sl", "tp", "exit_time_utc", "exit", "result", "R", "had_alert"]
     + [f"{int(b)}_before" for b in BALANCES]
     + [f"{int(b)}_pnl" for b in BALANCES]
     + [f"{int(b)}_after" for b in BALANCES]
 )
-ALERTS_HEADER = ["event", "alert_id", "time", "side", "price", "range_high", "range_low", "atr", "outcome"]
+ALERTS_HEADER = ["event", "alert_id", "time_utc", "side", "price", "range_high", "range_low", "atr", "outcome"]
+PRICE_HEADER = ["time_utc", "close", "pct_return"] + [f"{int(b)}_balance" for b in BALANCES]
+
+
+def utc_iso(ts):
+    return dt.datetime.fromtimestamp(ts, tz=dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 # ------------------------------ small helpers -------------------------------
@@ -116,6 +144,16 @@ def atr14_m15(session, before_ts):
         h, l, pc = rows[i]["high"], rows[i]["low"], rows[i - 1]["close"]
         trs.append(max(h - l, abs(h - pc), abs(l - pc)))
     return sum(trs[-14:]) / 14
+
+
+def _live_atr_fn(bar_time):
+    return atr14_m15(SESSION, bar_time)
+
+
+# process_bar() calls ATR_FN(bar_time), never atr14_m15 directly, so a backtest
+# script can point this at a local, already-loaded OHLC lookup instead of a
+# live network call, without touching a single line of the strategy logic.
+ATR_FN = _live_atr_fn
 
 
 def ny_time_of(ts_utc):
@@ -225,7 +263,7 @@ def process_bar(state, bar, ny_dt, tod):
                 result, exit_px = "TP", ot["tp"]
             else:
                 result, exit_px = "FLAT", c
-            close_trade(state, ot, result, exit_px, ny_dt.isoformat())
+            close_trade(state, ot, result, exit_px, utc_iso(bar["time"]))
             state["open_trade"] = None
 
     # --- opening range build ---
@@ -235,7 +273,7 @@ def process_bar(state, bar, ny_dt, tod):
         state["closes_before"] = []
 
     if tod == range_end and state["range_high"] is not None and state["day_atr"] is None:
-        a = atr14_m15(SESSION, bar["time"])
+        a = ATR_FN(bar["time"])
         state["day_atr"] = a
         if a:
             rng_w = state["range_high"] - state["range_low"]
@@ -263,7 +301,7 @@ def process_bar(state, bar, ny_dt, tod):
                 log_line(f"\U0001F514 ALERT FIRED - WATCH BUY  approaching {rh:.2f}  [alert_id={aid}]")
                 state["alerts_total"] += 1
                 append_csv(ALERTS_LOG, ALERTS_HEADER,
-                           ["FIRED", aid, ny_dt.isoformat(), "BUY", c, rh, rl, a, ""])
+                           ["FIRED", aid, utc_iso(bar["time"]), "BUY", c, rh, rl, a, ""])
 
             if not state["alerted_dn"] and c > rl and (l - rl) <= alert_zone and falling:
                 state["alerted_dn"] = True
@@ -271,7 +309,7 @@ def process_bar(state, bar, ny_dt, tod):
                 log_line(f"\U0001F514 ALERT FIRED - WATCH SELL  approaching {rl:.2f}  [alert_id={aid}]")
                 state["alerts_total"] += 1
                 append_csv(ALERTS_LOG, ALERTS_HEADER,
-                           ["FIRED", aid, ny_dt.isoformat(), "SELL", c, rh, rl, a, ""])
+                           ["FIRED", aid, utc_iso(bar["time"]), "SELL", c, rh, rl, a, ""])
 
         side = 1 if c > rh else (-1 if c < rl else 0)
         if side != 0:
@@ -280,7 +318,7 @@ def process_bar(state, bar, ny_dt, tod):
             if had_alert:
                 state["alerts_followed"] += 1
                 append_csv(ALERTS_LOG, ALERTS_HEADER,
-                           ["RESOLVED", aid, ny_dt.isoformat(), "BUY" if side == 1 else "SELL",
+                           ["RESOLVED", aid, utc_iso(bar["time"]), "BUY" if side == 1 else "SELL",
                             c, rh, rl, a, "BREAKOUT_FOLLOWED"])
             sl = c - ATR_STOP_MULT * a if side == 1 else c + ATR_STOP_MULT * a
             tp = c + RR * ATR_STOP_MULT * a if side == 1 else c - RR * ATR_STOP_MULT * a
@@ -288,7 +326,7 @@ def process_bar(state, bar, ny_dt, tod):
                      f"SL {sl:.2f}  TP {tp:.2f}  (had_alert={had_alert})")
             state["traded_today"] = True
             state["open_trade"] = dict(side=side, entry=c, sl=sl, tp=tp,
-                                        entry_time=ny_dt.isoformat(), had_alert=had_alert)
+                                        entry_time=utc_iso(bar["time"]), had_alert=had_alert)
 
     closes_before.append(c)
     state["closes_before"] = list(closes_before)
@@ -300,8 +338,16 @@ def process_bar(state, bar, ny_dt, tod):
                 aid = f"{day_key}-{key}"
                 state["alerts_not_followed"] += 1
                 append_csv(ALERTS_LOG, ALERTS_HEADER,
-                           ["RESOLVED", aid, ny_dt.isoformat(), "BUY" if key == "UP" else "SELL",
+                           ["RESOLVED", aid, utc_iso(bar["time"]), "BUY" if key == "UP" else "SELL",
                             c, state["range_high"], state["range_low"], state["day_atr"], "NOT_FOLLOWED"])
+
+    # --- price + equity history, one row per processed bar (for the dashboard chart) ---
+    base_bal0 = BALANCES[0]
+    base_tier = state["tiers"][str(int(base_bal0))]
+    pct_return = (base_tier["balance"] / base_bal0 - 1) * 100
+    append_csv(PRICE_LOG, PRICE_HEADER,
+               [utc_iso(bar["time"]), c, round(pct_return, 4)]
+               + [round(state["tiers"][str(int(b))]["balance"], 2) for b in BALANCES])
 
 
 def write_summary(state):
@@ -355,16 +401,17 @@ def main():
     state = load_state()
     now = int(time.time())
 
-    ny_now, _ = ny_time_of(now)
-    range_start_min = RANGE_START_H * 60 + RANGE_START_M
-    window_start_ny = NY_TZ.localize(dt.datetime.combine(
-        ny_now.date(), dt.time(0, 0))) + dt.timedelta(minutes=max(range_start_min - 20, 0))
-    fetch_from = int(window_start_ny.timestamp())
-    if state.get("last_bar_time"):
-        fetch_from = min(fetch_from, state["last_bar_time"] + 60)
+    # Continuous, all-day fetching: pick up right where the last run left off,
+    # regardless of what time of day (or NY session) it currently is. The
+    # workflow's cron now fires every 5 minutes around the clock, so this
+    # normally only needs to cover the last few minutes; the 6-hour fallback
+    # only matters on a genuinely first-ever run with no state.json yet
+    # (normally state.json is seeded with real history before this ever runs -
+    # see the chat/README for the one-time backfill step).
+    last_bar_time = state.get("last_bar_time")
+    fetch_from = (last_bar_time + 60) if last_bar_time else (now - 6 * 3600)
 
     rows = fetch_candles(SESSION, "1m", fetch_from, now)
-    last_bar_time = state.get("last_bar_time")
     new_rows = [r for r in rows
                 if (last_bar_time is None or r["time"] > last_bar_time) and r["time"] + 60 <= now]
 

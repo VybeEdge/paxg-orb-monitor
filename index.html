@@ -175,6 +175,24 @@ header{display:flex;justify-content:space-between;align-items:flex-start;gap:16p
 .chart-card .chart-head h3{font-size:14px;font-weight:700;}
 .chart-card .chart-head .now{font-size:13px;color:var(--text-secondary);}
 .chart-card .chart-head .now b{color:var(--text-primary);}
+
+/* ---------- backtest section ---------- */
+.backtest-section{
+  display:flex;flex-direction:column;gap:16px;
+  border-top:1px solid var(--border);padding-top:24px;margin-top:4px;
+}
+.backtest-section .chart-head h3{font-size:16px;}
+.bt-blurb{margin:0;color:var(--text-secondary);font-size:13.5px;line-height:1.55;max-width:70ch;}
+.bt-range-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.bt-range-row label{
+  display:flex;flex-direction:column;gap:4px;font-size:11.5px;color:var(--text-muted);
+  font-weight:600;text-transform:uppercase;letter-spacing:.02em;
+}
+.bt-range-row input[type="datetime-local"]{
+  background:var(--surface-1);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);
+  padding:8px 10px;font-family:"JetBrains Mono",monospace;font-size:13px;
+}
+.bt-hint{font-size:12px;color:var(--text-muted);align-self:flex-end;margin-bottom:9px;}
 .legend-row{display:flex;gap:16px;font-size:12px;color:var(--text-secondary);margin-bottom:4px;flex-wrap:wrap;}
 .legend-row span{display:inline-flex;align-items:center;gap:6px;}
 .legend-key{width:14px;height:2px;border-radius:2px;display:inline-block;}
@@ -341,6 +359,69 @@ footer a{color:var(--text-secondary);}
       </div>
     </section>
 
+    <section class="backtest-section">
+      <div class="chart-head" style="margin-bottom:12px;">
+        <h3>Strategy backtest</h3>
+        <div class="now" id="btSpan">-</div>
+      </div>
+      <p class="bt-blurb">The same ORB strategy, replayed bar-by-bar over PAXGUSD's full downloaded history (not just since this monitor went live). Pick any window to see how it would have performed.</p>
+      <div class="bt-range-row">
+        <label>Start<input type="datetime-local" id="btStart"></label>
+        <label>End<input type="datetime-local" id="btEnd"></label>
+        <button class="btn" id="btShow">Show results</button>
+        <span class="bt-hint">Times are UTC</span>
+      </div>
+
+      <section class="tiles" id="btTiles"></section>
+
+      <section class="chart-card">
+        <div class="chart-head">
+          <h3>PAXGUSD price (backtest range)</h3>
+          <div class="now">Last: <b class="mono" id="btPriceNow">-</b></div>
+        </div>
+        <div class="legend-row">
+          <span><i class="legend-key" style="background:var(--accent)"></i> Close price</span>
+          <span><i class="legend-dot" style="background:var(--warning)"></i> Indicator fired</span>
+          <span><i class="legend-dot" style="background:var(--good)"></i> Trade entry (win)</span>
+          <span><i class="legend-dot" style="background:var(--critical)"></i> Trade entry (loss)</span>
+        </div>
+        <div class="chart-svg-wrap" id="btPriceChartWrap"></div>
+      </section>
+
+      <section class="chart-card">
+        <div class="chart-head">
+          <h3>Account return (backtest range)</h3>
+          <div class="now">Range return: <b class="mono" id="btEquityNow">-</b></div>
+        </div>
+        <div class="legend-row">
+          <span><i class="legend-key" style="background:var(--gold)"></i> Cumulative return % (same for every balance size)</span>
+        </div>
+        <div class="chart-svg-wrap" id="btEquityChartWrap"></div>
+      </section>
+
+      <div class="tabbar" id="btTabbar">
+        <button class="active" data-tab="trades">Trades <span class="count" id="btTradesCount">0</span></button>
+        <button data-tab="alerts">Indicators <span class="count" id="btAlertsCount">0</span></button>
+      </div>
+      <div class="table-wrap" style="margin-top:14px;">
+        <table id="btTradesTable">
+          <thead><tr>
+            <th>Entry (UTC)</th><th>Entry (IST)</th><th>Side</th>
+            <th class="num">Entry px</th><th class="num">Exit px</th><th>Result</th>
+            <th>Indicator?</th><th class="num">R</th><th class="num">P/L $</th><th class="num">P/L %</th><th>Outcome</th>
+          </tr></thead>
+          <tbody id="btTradesBody"></tbody>
+        </table>
+        <table id="btAlertsTable" hidden>
+          <thead><tr>
+            <th>Fired (UTC)</th><th>Fired (IST)</th><th>Side</th><th class="num">Price</th>
+            <th>Breakout followed?</th><th>Resulting trade</th><th>Outcome</th>
+          </tr></thead>
+          <tbody id="btAlertsBody"></tbody>
+        </table>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -385,10 +466,29 @@ footer a{color:var(--text-secondary);}
     alertsTable: document.getElementById("alertsTable"),
     tradesCount: document.getElementById("tradesCount"),
     alertsCount: document.getElementById("alertsCount"),
-    tabbar: document.querySelector(".tabbar")
+    tabbar: document.querySelector(".tabbar"),
+    btStart: document.getElementById("btStart"),
+    btEnd: document.getElementById("btEnd"),
+    btShow: document.getElementById("btShow"),
+    btSpan: document.getElementById("btSpan"),
+    btTiles: document.getElementById("btTiles"),
+    btPriceWrap: document.getElementById("btPriceChartWrap"),
+    btEquityWrap: document.getElementById("btEquityChartWrap"),
+    btPriceNow: document.getElementById("btPriceNow"),
+    btEquityNow: document.getElementById("btEquityNow"),
+    btTabbar: document.getElementById("btTabbar"),
+    btTradesBody: document.getElementById("btTradesBody"),
+    btAlertsBody: document.getElementById("btAlertsBody"),
+    btTradesTable: document.getElementById("btTradesTable"),
+    btAlertsTable: document.getElementById("btAlertsTable"),
+    btTradesCount: document.getElementById("btTradesCount"),
+    btAlertsCount: document.getElementById("btAlertsCount")
   };
 
-  var state = { range:"1M", tier:"1000", price:[], trades:[], alerts:[] };
+  var state = {
+    range:"1M", tier:"1000", price:[], trades:[], alerts:[],
+    btPrice:[], btTrades:[], btAlerts:[], btRangeSet:false
+  };
 
   function showSetup(){ els.setupCard.hidden = false; els.mainContent.hidden = true; }
   function showMain(){ els.setupCard.hidden = true; els.mainContent.hidden = false; }
@@ -435,13 +535,21 @@ footer a{color:var(--text-secondary);}
     return Promise.all([
       fetchText(rawUrl("price_and_equity.csv")),
       fetchText(rawUrl("trades_log.csv")),
-      fetchText(rawUrl("alerts_log.csv"))
+      fetchText(rawUrl("alerts_log.csv")),
+      fetchText(rawUrl("backtest_price_and_equity.csv")),
+      fetchText(rawUrl("backtest_trades.csv")),
+      fetchText(rawUrl("backtest_alerts.csv"))
     ]).then(function(res){
       state.price  = res[0] ? parseCSV(res[0]).map(function(r){
         return { t: new Date(r.time_utc), close: num(r.close), pct: num(r.pct_return) };
       }) : [];
       state.trades = res[1] ? parseCSV(res[1]).map(function(r){ r._entry = new Date(r.entry_time_utc); r._exit = new Date(r.exit_time_utc); return r; }) : [];
       state.alerts = res[2] ? parseCSV(res[2]) : [];
+      state.btPrice  = res[3] ? parseCSV(res[3]).map(function(r){
+        return { t: new Date(r.time_utc), close: num(r.close), pct: num(r.pct_return) };
+      }) : [];
+      state.btTrades = res[4] ? parseCSV(res[4]).map(function(r){ r._entry = new Date(r.entry_time_utc); r._exit = new Date(r.exit_time_utc); return r; }) : [];
+      state.btAlerts = res[5] ? parseCSV(res[5]) : [];
       els.liveText.textContent = "connected";
       els.repoLink.innerHTML = 'Data from <a href="https://github.com/' + settings.owner + '/' + settings.repo + '" target="_blank" rel="noopener">' +
         settings.owner + "/" + settings.repo + "</a>";
@@ -668,19 +776,18 @@ footer a{color:var(--text-secondary);}
         xFmt:xFmt, xFull:xFull });
   }
 
-  // ---------------- tables ----------------
-  function renderTrades(){
-    var bal0 = num(state.tierSelectValue || state.tier);
-    var rows = state.trades.slice().sort(function(a,b){ return b._entry - a._entry; });
-    els.tradesCount.textContent = rows.length;
+  // ---------------- tables (generalized: live section and backtest section share these) ----------------
+  function renderTradesInto(rows, tierKey, bodyEl, countEl){
+    rows = rows.slice().sort(function(a,b){ return b._entry - a._entry; });
+    countEl.textContent = rows.length;
     if (!rows.length){
-      els.tradesBody.innerHTML = '<tr><td colspan="11" class="empty-row">No trades logged yet.</td></tr>';
+      bodyEl.innerHTML = '<tr><td colspan="11" class="empty-row">No trades in this range.</td></tr>';
       return;
     }
     var html = "";
     rows.forEach(function(t){
       var R = num(t.R), win = R>0;
-      var pnlKey = state.tier+"_pnl", beforeKey = state.tier+"_before";
+      var pnlKey = tierKey+"_pnl", beforeKey = tierKey+"_before";
       var pnl = num(t[pnlKey]), before = num(t[beforeKey]);
       var pnlPct = before ? (pnl/before*100) : 0;
       html += '<tr>' +
@@ -697,12 +804,12 @@ footer a{color:var(--text-secondary);}
         '<td><span class="pill '+(win?"success":"failed")+'">'+(win?"Success":"Failed")+'</span></td>' +
         '</tr>';
     });
-    els.tradesBody.innerHTML = html;
+    bodyEl.innerHTML = html;
   }
 
-  function renderAlerts(){
+  function renderAlertsInto(alertRows, tradeRows, bodyEl, countEl){
     var byId = {};
-    state.alerts.forEach(function(a){
+    alertRows.forEach(function(a){
       if (!byId[a.alert_id]) byId[a.alert_id] = { fired:null, resolved:null };
       if (a.event==="FIRED") byId[a.alert_id].fired = a;
       else byId[a.alert_id].resolved = a;
@@ -712,9 +819,9 @@ footer a{color:var(--text-secondary);}
       var tb = byId[b].fired ? new Date(byId[b].fired.time_utc) : 0;
       return tb-ta;
     });
-    els.alertsCount.textContent = ids.length;
+    countEl.textContent = ids.length;
     if (!ids.length){
-      els.alertsBody.innerHTML = '<tr><td colspan="7" class="empty-row">No indicator alerts logged yet.</td></tr>';
+      bodyEl.innerHTML = '<tr><td colspan="7" class="empty-row">No indicator alerts in this range.</td></tr>';
       return;
     }
     var html = "";
@@ -733,7 +840,7 @@ footer a{color:var(--text-secondary);}
       var tradeInfo = "-";
       if (followed){
         var day = t.toISOString().slice(0,10);
-        var match = state.trades.find(function(tr){ return tr._entry.toISOString().slice(0,10)===day && tr.side===side; });
+        var match = tradeRows.find(function(tr){ return tr._entry.toISOString().slice(0,10)===day && tr.side===side; });
         if (match){
           var win = num(match.R) > 0;
           tradeInfo = '<span class="'+(win?"side-buy":"side-sell")+'">'+(win?"Won":"Lost")+'</span> ('+match.result+', R='+num(match.R).toFixed(2)+')';
@@ -750,7 +857,117 @@ footer a{color:var(--text-secondary);}
         '<td><span class="pill '+pillClass+'">'+pillText+'</span></td>' +
         '</tr>';
     });
-    els.alertsBody.innerHTML = html;
+    bodyEl.innerHTML = html;
+  }
+
+  function renderTrades(){ renderTradesInto(state.trades, state.tier, els.tradesBody, els.tradesCount); }
+  function renderAlerts(){ renderAlertsInto(state.alerts, state.trades, els.alertsBody, els.alertsCount); }
+
+  // ---------------- backtest section ----------------
+  function fmtInputLocal(d){
+    // "YYYY-MM-DDTHH:MM" in UTC, for a datetime-local input showing UTC times
+    function p(n){ return String(n).padStart(2,"0"); }
+    return d.getUTCFullYear()+"-"+p(d.getUTCMonth()+1)+"-"+p(d.getUTCDate())+"T"+p(d.getUTCHours())+":"+p(d.getUTCMinutes());
+  }
+  function parseInputLocalUTC(v){
+    // v is "YYYY-MM-DDTHH:MM" from the input; treat those fields as UTC (matches fmtInputLocal)
+    if (!v) return null;
+    var parts = v.split(/[-T:]/).map(Number);
+    return new Date(Date.UTC(parts[0], parts[1]-1, parts[2], parts[3]||0, parts[4]||0));
+  }
+
+  function ensureBtRangeDefaults(){
+    if (state.btRangeSet || !state.btPrice.length) return;
+    state.btRangeSet = true;
+    els.btStart.value = fmtInputLocal(state.btPrice[0].t);
+    els.btEnd.value = fmtInputLocal(state.btPrice[state.btPrice.length-1].t);
+  }
+
+  function renderBacktest(){
+    ensureBtRangeDefaults();
+    if (!state.btPrice.length){
+      els.btSpan.textContent = "-";
+      buildChart(els.btPriceWrap, [], [], { id:"btprice", lineColor:"var(--accent)", label:"Price", yFmt:function(v){return "$"+v.toFixed(2);}, xFmt:function(){return "";}, xFull:function(){return "";} });
+      buildChart(els.btEquityWrap, [], [], { id:"btequity", lineColor:"var(--gold)", label:"Return", yFmt:function(v){return pct(v,1);}, xFmt:function(){return "";}, xFull:function(){return "";} });
+      renderTradesInto([], state.tier, els.btTradesBody, els.btTradesCount);
+      renderAlertsInto([], [], els.btAlertsBody, els.btAlertsCount);
+      return;
+    }
+    var start = parseInputLocalUTC(els.btStart.value) || state.btPrice[0].t;
+    var end = parseInputLocalUTC(els.btEnd.value) || state.btPrice[state.btPrice.length-1].t;
+    var startMs = start.getTime(), endMs = end.getTime();
+
+    var fp = state.btPrice.filter(function(p){ return p.t.getTime()>=startMs && p.t.getTime()<=endMs; });
+    var trades = state.btTrades.filter(function(t){ return t._entry.getTime()>=startMs && t._entry.getTime()<=endMs; });
+    var alerts = state.btAlerts.filter(function(a){ var t=new Date(a.time_utc).getTime(); return t>=startMs && t<=endMs; });
+
+    els.btSpan.textContent = fmtUTC(start) + " UTC  →  " + fmtUTC(end) + " UTC";
+    if (fp.length){
+      els.btPriceNow.textContent = "$" + fp[fp.length-1].close.toFixed(2);
+      els.btEquityNow.textContent = pct(fp[fp.length-1].pct - fp[0].pct);
+    } else {
+      els.btPriceNow.textContent = "-"; els.btEquityNow.textContent = "-";
+    }
+
+    var spanMs = endMs - startMs;
+    var xFmt = function(d){
+      if (spanMs < 2*86400000) return fmtUTC(d).slice(-5);
+      if (spanMs < 90*86400000) return fmtUTC(d).slice(0,5);
+      return fmtUTC(d).slice(3,10);
+    };
+    var xFull = function(d){ return fmtUTC(d)+" UTC"; };
+
+    var priceMarkers = [];
+    alerts.filter(function(a){ return a.event==="FIRED"; }).forEach(function(a){
+      priceMarkers.push({ t:new Date(a.time_utc), v:num(a.price), color:"var(--warning)", r:4 });
+    });
+    trades.forEach(function(tr){
+      var win = num(tr.R) > 0;
+      priceMarkers.push({ t:tr._entry, v:num(tr.entry), color: win?"var(--good)":"var(--critical)", r:5 });
+    });
+
+    // down-sample long ranges so the SVG line stays snappy (keep every marker, thin the line)
+    var plotSeries = fp;
+    var MAXPTS = 3000;
+    if (plotSeries.length > MAXPTS){
+      var step = Math.ceil(plotSeries.length / MAXPTS);
+      plotSeries = plotSeries.filter(function(_,i){ return i % step === 0; });
+    }
+
+    buildChart(els.btPriceWrap,
+      plotSeries.map(function(p){ return {t:p.t, v:p.close}; }),
+      priceMarkers,
+      { id:"btprice", lineColor:"var(--accent)", label:"Price", yFmt:function(v){ return "$"+v.toFixed(2); }, xFmt:xFmt, xFull:xFull });
+
+    buildChart(els.btEquityWrap,
+      plotSeries.map(function(p){ return {t:p.t, v:p.pct}; }),
+      [],
+      { id:"btequity", lineColor:"var(--gold)", label:"Return", yFmt:function(v){ return pct(v,1); }, xFmt:xFmt, xFull:xFull });
+
+    // stat tiles for the selected range
+    var tt = trades.length, tw = trades.filter(function(t){ return num(t.R) > 0; }).length;
+    var wr = tt ? (tw/tt*100) : 0;
+    var pf = (function(){
+      var wins=0, losses=0;
+      trades.forEach(function(t){ var r=num(t.R); if(r>0) wins+=r; else losses+=Math.abs(r); });
+      return losses>0 ? (wins/losses) : (wins>0? Infinity : 0);
+    })();
+    var fired = alerts.filter(function(a){ return a.event==="FIRED"; }).length;
+    var followed = alerts.filter(function(a){ return a.event==="RESOLVED" && a.outcome==="BREAKOUT_FOLLOWED"; }).length;
+    var notFollowed = alerts.filter(function(a){ return a.event==="RESOLVED" && a.outcome==="NOT_FOLLOWED"; }).length;
+    var resolved = followed+notFollowed;
+    var followRate = resolved ? (followed/resolved*100) : 0;
+    var rangeRet = fp.length ? (fp[fp.length-1].pct - fp[0].pct) : 0;
+
+    els.btTiles.innerHTML =
+      '<div class="tile"><div class="label">Range return</div><div class="value mono">'+pct(rangeRet,1)+'</div><div class="sub">1% risk per trade, compounding</div></div>' +
+      '<div class="tile"><div class="label">Trades taken</div><div class="value mono">'+tt+'</div><div class="sub">in the selected window</div></div>' +
+      '<div class="tile"><div class="label">Win rate</div><div class="value mono">'+(tt?wr.toFixed(1):"-")+'%</div><div class="sub">'+tw+' wins / '+(tt-tw)+' losses</div></div>' +
+      '<div class="tile"><div class="label">Profit factor</div><div class="value mono">'+(pf===Infinity?"∞":(tt?pf.toFixed(2):"-"))+'</div><div class="sub">gross win ÷ gross loss</div></div>' +
+      '<div class="tile"><div class="label">Indicator accuracy</div><div class="value mono">'+(resolved?followRate.toFixed(1):"-")+'%</div><div class="sub">'+fired+' fired, '+resolved+' resolved</div></div>';
+
+    renderTradesInto(trades, state.tier, els.btTradesBody, els.btTradesCount);
+    renderAlertsInto(alerts, trades, els.btAlertsBody, els.btAlertsCount);
   }
 
   function renderAll(){
@@ -758,6 +975,7 @@ footer a{color:var(--text-secondary);}
     renderCharts();
     renderTrades();
     renderAlerts();
+    renderBacktest();
   }
 
   // ---------------- controls ----------------
@@ -769,7 +987,7 @@ footer a{color:var(--text-secondary);}
     state.range = btn.dataset.range;
     renderCharts();
   });
-  els.tierSelect.addEventListener("change", function(){ state.tier = els.tierSelect.value; renderTrades(); });
+  els.tierSelect.addEventListener("change", function(){ state.tier = els.tierSelect.value; renderTrades(); renderBacktest(); });
   els.tabbar.addEventListener("click", function(e){
     var btn = e.target.closest("button[data-tab]");
     if (!btn) return;
@@ -779,6 +997,16 @@ footer a{color:var(--text-secondary);}
     els.tradesTable.hidden = !isTrades;
     els.alertsTable.hidden = isTrades;
   });
+  els.btTabbar.addEventListener("click", function(e){
+    var btn = e.target.closest("button[data-tab]");
+    if (!btn) return;
+    els.btTabbar.querySelectorAll("button[data-tab]").forEach(function(b){ b.classList.remove("active"); });
+    btn.classList.add("active");
+    var isTrades = btn.dataset.tab === "trades";
+    els.btTradesTable.hidden = !isTrades;
+    els.btAlertsTable.hidden = isTrades;
+  });
+  els.btShow.addEventListener("click", renderBacktest);
 
   // ---------------- boot ----------------
   function boot(){
@@ -788,7 +1016,10 @@ footer a{color:var(--text-secondary);}
     loadData().then(renderAll);
   }
   boot();
-  setInterval(function(){ if (settings) loadData().then(renderAll); }, 60000);
+  // Refreshed every 5 minutes - matches the GitHub Action's own polling cadence
+  // (Delta's public data only updates that often on this monitor's side), so
+  // refreshing more often than that just re-fetches the same numbers.
+  setInterval(function(){ if (settings) loadData().then(renderAll); }, 5*60*1000);
 })();
 </script>
 

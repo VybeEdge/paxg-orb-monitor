@@ -1,0 +1,649 @@
+[2026-09-26 10:44:49 UTC] Range set: 5029.88-5041.80 (width 11.92, ATR15 8.88) -> TRADEABLE
+[2026-09-26 10:44:49 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 5041.80  [alert_id=2026-02-20-UP]
+[2026-09-26 10:44:49 UTC] >>> BUY SIGNAL  entry~5041.90  SL 5033.02  TP 5072.98  (had_alert=True)
+[2026-09-26 10:44:49 UTC] PAPER TRADE CLOSED  BUY entry 5041.90 -> exit 5072.98  result=TP  R=3.50  (had_alert=True)
+[2026-09-26 10:44:49 UTC] Range set: 5128.10-5129.70 (width 1.60, ATR15 2.00) -> TRADEABLE
+[2026-09-26 10:44:49 UTC] >>> BUY SIGNAL  entry~5129.80  SL 5127.80  TP 5136.79  (had_alert=False)
+[2026-09-26 10:44:49 UTC] PAPER TRADE CLOSED  BUY entry 5129.80 -> exit 5136.79  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:49 UTC] Range set: 5136.10-5138.50 (width 2.40, ATR15 2.38) -> TRADEABLE
+[2026-09-26 10:44:49 UTC] >>> BUY SIGNAL  entry~5138.80  SL 5136.42  TP 5147.12  (had_alert=False)
+[2026-09-26 10:44:49 UTC] PAPER TRADE CLOSED  BUY entry 5138.80 -> exit 5147.12  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5160.50-5166.40 (width 5.90, ATR15 8.17) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 5166.40  [alert_id=2026-02-23-UP]
+[2026-09-26 10:44:50 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 5160.50  [alert_id=2026-02-23-DN]
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5158.60  SL 5166.77  TP 5130.00  (had_alert=True)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5158.60 -> exit 5166.77  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:50 UTC] Range set: 5149.40-5174.30 (width 24.90, ATR15 8.66) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:50 UTC] Range set: 5203.10-5206.10 (width 3.00, ATR15 8.76) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~5206.40  SL 5197.64  TP 5237.05  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 5206.40 -> exit 5197.64  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5175.20-5185.80 (width 10.60, ATR15 8.51) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5174.60  SL 5183.11  TP 5144.80  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5174.60 -> exit 5183.11  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5228.80-5244.90 (width 16.10, ATR15 7.23) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:50 UTC] Range set: 5428.30-5439.80 (width 11.50, ATR15 36.95) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~5440.50  SL 5403.55  TP 5569.82  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 5440.50 -> exit 5403.55  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5397.20-5406.90 (width 9.70, ATR15 12.86) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5396.60  SL 5409.46  TP 5351.59  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5396.60 -> exit 5409.46  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5420.00-5438.10 (width 18.10, ATR15 12.97) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5417.10  SL 5430.07  TP 5371.71  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5417.10 -> exit 5371.71  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5170.10-5199.00 (width 28.90, ATR15 40.73) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5167.60  SL 5208.33  TP 5025.04  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5167.60 -> exit 5130.40  result=FLAT  R=0.91  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5192.80-5200.70 (width 7.90, ATR15 13.70) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 5200.70  [alert_id=2026-03-04-UP]
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5191.00  SL 5204.70  TP 5143.05  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5191.00 -> exit 5143.05  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5121.80-5140.20 (width 18.40, ATR15 8.06) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:50 UTC] Range set: 5090.60-5136.10 (width 45.50, ATR15 13.08) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:50 UTC] Range set: 5177.40-5178.90 (width 1.50, ATR15 2.68) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~5179.20  SL 5176.52  TP 5188.59  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 5179.20 -> exit 5176.52  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5170.70-5174.80 (width 4.10, ATR15 1.81) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:50 UTC] Range set: 5113.90-5118.40 (width 4.50, ATR15 11.89) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5110.90  SL 5122.78  TP 5069.30  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5110.90 -> exit 5069.30  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5181.70-5185.10 (width 3.40, ATR15 9.81) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~5185.90  SL 5176.09  TP 5220.25  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 5185.90 -> exit 5220.25  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5172.00-5196.70 (width 24.70, ATR15 9.41) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:50 UTC] Range set: 5166.60-5172.00 (width 5.40, ATR15 5.74) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~5172.80  SL 5167.06  TP 5192.90  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 5172.80 -> exit 5167.06  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5107.70-5112.50 (width 4.80, ATR15 9.08) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5106.80  SL 5115.88  TP 5075.03  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5106.80 -> exit 5115.88  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5025.50-5026.50 (width 1.00, ATR15 1.37) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~5027.00  SL 5025.63  TP 5031.79  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 5027.00 -> exit 5025.63  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5009.00-5009.70 (width 0.70, ATR15 2.51) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5005.80  SL 5008.31  TP 4997.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5005.80 -> exit 5008.31  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 5010.50-5016.10 (width 5.60, ATR15 11.89) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 5010.50  [alert_id=2026-03-16-DN]
+[2026-09-26 10:44:50 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 5016.10  [alert_id=2026-03-16-UP]
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5010.00  SL 5021.89  TP 4968.40  (had_alert=True)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5010.00 -> exit 5021.89  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:50 UTC] Range set: 5006.40-5013.56 (width 7.16, ATR15 7.99) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~5004.70  SL 5012.69  TP 4976.74  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 5004.70 -> exit 5012.69  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4868.40-4894.60 (width 26.20, ATR15 14.62) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~4866.80  SL 4881.42  TP 4815.61  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 4866.80 -> exit 4881.42  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4596.90-4616.10 (width 19.20, ATR15 25.87) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~4589.20  SL 4615.07  TP 4498.66  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 4589.20 -> exit 4615.07  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4664.40-4681.70 (width 17.30, ATR15 19.19) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~4664.10  SL 4683.29  TP 4596.93  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 4664.10 -> exit 4596.93  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4504.50-4505.80 (width 1.30, ATR15 2.74) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~4506.20  SL 4503.46  TP 4515.80  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 4506.20 -> exit 4503.46  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4466.30-4471.30 (width 5.00, ATR15 7.44) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~4471.80  SL 4464.36  TP 4497.82  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 4471.80 -> exit 4493.90  result=FLAT  R=2.97  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4379.40-4421.40 (width 42.00, ATR15 51.84) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~4426.30  SL 4374.46  TP 4607.73  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 4426.30 -> exit 4374.46  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4372.20-4412.26 (width 40.06, ATR15 21.45) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4372.20  [alert_id=2026-03-24-DN]
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~4365.20  SL 4386.65  TP 4290.13  (had_alert=True)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 4365.20 -> exit 4386.65  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:50 UTC] Range set: 4520.90-4551.50 (width 30.60, ATR15 11.84) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:50 UTC] Range set: 4435.80-4447.30 (width 11.50, ATR15 16.57) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4435.80  [alert_id=2026-03-26-DN]
+[2026-09-26 10:44:50 UTC] >>> SELL SIGNAL  entry~4433.40  SL 4449.97  TP 4375.42  (had_alert=True)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  SELL entry 4433.40 -> exit 4449.97  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:50 UTC] Range set: 4424.30-4435.50 (width 11.20, ATR15 9.90) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~4435.90  SL 4426.00  TP 4470.55  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 4435.90 -> exit 4426.00  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4501.20-4503.30 (width 2.10, ATR15 2.05) -> TRADEABLE
+[2026-09-26 10:44:50 UTC] >>> BUY SIGNAL  entry~4504.00  SL 4501.95  TP 4511.17  (had_alert=False)
+[2026-09-26 10:44:50 UTC] PAPER TRADE CLOSED  BUY entry 4504.00 -> exit 4501.95  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:50 UTC] Range set: 4499.70-4509.00 (width 9.30, ATR15 2.73) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:51 UTC] Range set: 4563.70-4573.00 (width 9.30, ATR15 12.10) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4573.10  SL 4561.00  TP 4615.44  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4573.10 -> exit 4561.00  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4575.70-4586.80 (width 11.10, ATR15 15.18) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4575.70  [alert_id=2026-03-31-DN]
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4574.70  SL 4589.88  TP 4521.58  (had_alert=True)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4574.70 -> exit 4589.88  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:51 UTC] Range set: 4720.60-4734.90 (width 14.30, ATR15 10.71) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4735.20  SL 4724.49  TP 4772.68  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4735.20 -> exit 4724.49  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4610.50-4617.10 (width 6.60, ATR15 14.54) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4610.00  SL 4624.54  TP 4559.12  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4610.00 -> exit 4624.54  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4649.30-4664.10 (width 14.80, ATR15 1.07) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:51 UTC] Range set: 4652.60-4652.80 (width 0.20, ATR15 1.67) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4652.90  SL 4651.23  TP 4658.73  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4652.90 -> exit 4651.23  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4618.60-4623.00 (width 4.40, ATR15 2.58) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4623.50  SL 4620.92  TP 4632.52  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4623.50 -> exit 4632.52  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4651.20-4662.00 (width 10.80, ATR15 8.60) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4662.40  SL 4653.80  TP 4692.51  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4662.40 -> exit 4653.80  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4642.44-4652.30 (width 9.86, ATR15 14.32) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4641.10  SL 4655.42  TP 4590.97  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4641.10 -> exit 4655.42  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4763.70-4777.30 (width 13.60, ATR15 12.19) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4777.30  [alert_id=2026-04-08-UP]
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4779.50  SL 4767.31  TP 4822.18  (had_alert=True)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4779.50 -> exit 4767.31  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:51 UTC] Range set: 4722.50-4731.10 (width 8.60, ATR15 7.88) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4733.10  SL 4725.22  TP 4760.68  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4733.10 -> exit 4725.22  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4745.00-4762.60 (width 17.60, ATR15 7.47) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:51 UTC] Range set: 4728.00-4728.60 (width 0.60, ATR15 0.99) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4727.80  SL 4728.79  TP 4724.32  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4727.80 -> exit 4728.79  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4705.60-4706.20 (width 0.60, ATR15 2.32) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4705.30  SL 4707.62  TP 4697.17  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4705.30 -> exit 4697.17  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4690.10-4697.10 (width 7.00, ATR15 8.92) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4697.10  [alert_id=2026-04-13-UP]
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4700.50  SL 4691.58  TP 4731.73  (had_alert=True)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4700.50 -> exit 4691.58  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:51 UTC] Range set: 4750.70-4757.90 (width 7.20, ATR15 8.96) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4757.90  [alert_id=2026-04-14-UP]
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4750.70  [alert_id=2026-04-14-DN]
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4750.40  SL 4759.36  TP 4719.05  (had_alert=True)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4750.40 -> exit 4759.36  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:51 UTC] Range set: 4801.00-4805.20 (width 4.20, ATR15 9.48) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4800.60  SL 4810.08  TP 4767.42  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4800.60 -> exit 4810.08  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4798.70-4806.71 (width 8.01, ATR15 6.05) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4798.70  [alert_id=2026-04-16-DN]
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4806.90  SL 4800.85  TP 4828.07  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4806.90 -> exit 4800.85  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4799.50-4807.40 (width 7.90, ATR15 6.18) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4808.50  SL 4802.32  TP 4830.13  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4808.50 -> exit 4830.13  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4788.10-4789.10 (width 1.00, ATR15 3.28) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4788.00  SL 4791.28  TP 4776.52  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4788.00 -> exit 4791.28  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4778.80-4781.00 (width 2.20, ATR15 3.00) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4778.40  SL 4781.40  TP 4767.90  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4778.40 -> exit 4781.40  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4781.50-4791.20 (width 9.70, ATR15 6.46) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4791.20  [alert_id=2026-04-20-UP]
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4793.50  SL 4787.04  TP 4816.10  (had_alert=True)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4793.50 -> exit 4787.04  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:51 UTC] Range set: 4754.60-4775.90 (width 21.30, ATR15 5.86) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:51 UTC] Range set: 4732.90-4738.70 (width 5.80, ATR15 6.02) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4731.90  SL 4737.91  TP 4710.85  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4731.90 -> exit 4737.91  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4718.00-4725.00 (width 7.00, ATR15 8.98) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4725.00  [alert_id=2026-04-23-UP]
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4718.00  [alert_id=2026-04-23-DN]
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4726.10  SL 4717.12  TP 4757.53  (had_alert=True)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4726.10 -> exit 4717.12  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:51 UTC] Range set: 4691.30-4698.30 (width 7.00, ATR15 9.19) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4690.00  SL 4699.19  TP 4657.82  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4690.00 -> exit 4699.19  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4697.40-4697.90 (width 0.50, ATR15 1.01) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4697.30  SL 4698.31  TP 4693.75  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4697.30 -> exit 4698.31  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4695.90-4696.00 (width 0.10, ATR15 0.98) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4696.40  SL 4695.42  TP 4699.82  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4696.40 -> exit 4699.82  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4687.50-4693.00 (width 5.50, ATR15 5.42) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4686.30  SL 4691.72  TP 4667.34  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4686.30 -> exit 4667.34  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4563.70-4579.00 (width 15.30, ATR15 12.16) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4579.20  SL 4567.04  TP 4621.78  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4579.20 -> exit 4567.04  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4544.75-4552.50 (width 7.75, ATR15 7.99) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4552.50  [alert_id=2026-04-29-UP]
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4544.75  [alert_id=2026-04-29-DN]
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4543.00  SL 4550.99  TP 4515.03  (had_alert=True)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4543.00 -> exit 4515.03  result=TP  R=3.50  (had_alert=True)
+[2026-09-26 10:44:51 UTC] Range set: 4617.66-4627.60 (width 9.94, ATR15 9.05) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4617.66  [alert_id=2026-04-30-DN]
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4627.70  SL 4618.65  TP 4659.36  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4627.70 -> exit 4618.65  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4589.30-4596.80 (width 7.50, ATR15 7.63) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> SELL SIGNAL  entry~4586.60  SL 4594.23  TP 4559.90  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  SELL entry 4586.60 -> exit 4594.23  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4601.10-4601.30 (width 0.20, ATR15 0.58) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4601.40  SL 4600.82  TP 4603.42  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4601.40 -> exit 4600.82  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4611.30-4613.70 (width 2.40, ATR15 1.83) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4613.80  SL 4611.97  TP 4620.21  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4613.80 -> exit 4611.97  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:51 UTC] Range set: 4555.10-4563.10 (width 8.00, ATR15 11.29) -> TRADEABLE
+[2026-09-26 10:44:51 UTC] >>> BUY SIGNAL  entry~4563.70  SL 4552.41  TP 4603.22  (had_alert=False)
+[2026-09-26 10:44:51 UTC] PAPER TRADE CLOSED  BUY entry 4563.70 -> exit 4552.41  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4557.70-4564.60 (width 6.90, ATR15 7.77) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4556.90  SL 4564.67  TP 4529.70  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4556.90 -> exit 4564.67  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4666.00-4673.30 (width 7.30, ATR15 13.56) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4666.00  [alert_id=2026-05-06-DN]
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4673.30  [alert_id=2026-05-06-UP]
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4664.80  SL 4678.36  TP 4617.34  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4664.80 -> exit 4678.36  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4726.60-4737.70 (width 11.10, ATR15 7.86) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4740.37  SL 4732.51  TP 4767.89  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4740.37 -> exit 4732.51  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4694.00-4716.50 (width 22.50, ATR15 7.04) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:52 UTC] Range set: 4703.50-4703.80 (width 0.30, ATR15 0.75) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4703.90  SL 4703.15  TP 4706.52  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4703.90 -> exit 4703.15  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4714.00-4714.80 (width 0.80, ATR15 1.92) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4715.00  SL 4713.08  TP 4721.73  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4715.00 -> exit 4721.73  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4682.90-4691.90 (width 9.00, ATR15 6.76) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4682.90  [alert_id=2026-05-11-DN]
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4693.00  SL 4686.24  TP 4716.66  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4693.00 -> exit 4716.66  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4682.60-4695.60 (width 13.00, ATR15 7.56) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4696.50  SL 4688.94  TP 4722.95  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4696.50 -> exit 4688.94  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4670.20-4679.10 (width 8.90, ATR15 7.11) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4679.10  [alert_id=2026-05-13-UP]
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4681.50  SL 4674.39  TP 4706.39  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4681.50 -> exit 4674.39  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4692.00-4700.00 (width 8.00, ATR15 6.69) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4688.70  SL 4695.39  TP 4665.27  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4688.70 -> exit 4695.39  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4549.00-4556.60 (width 7.60, ATR15 12.10) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4547.30  SL 4559.40  TP 4504.95  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4547.30 -> exit 4559.40  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4527.20-4527.70 (width 0.50, ATR15 4.17) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4528.00  SL 4523.83  TP 4542.60  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4528.00 -> exit 4537.00  result=FLAT  R=2.16  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4535.85-4536.40 (width 0.55, ATR15 1.33) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4536.40  [alert_id=2026-05-17-UP]
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4535.85  [alert_id=2026-05-17-DN]
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4535.60  SL 4536.93  TP 4530.95  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4535.60 -> exit 4536.93  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4550.50-4563.80 (width 13.30, ATR15 9.98) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4564.50  SL 4554.52  TP 4599.43  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4564.50 -> exit 4554.52  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4544.00-4548.80 (width 4.80, ATR15 8.94) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4543.60  SL 4552.54  TP 4512.30  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4543.60 -> exit 4512.30  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4503.70-4508.80 (width 5.10, ATR15 7.24) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4503.70  [alert_id=2026-05-20-DN]
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4502.70  SL 4509.94  TP 4477.38  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4502.70 -> exit 4477.38  result=TP  R=3.50  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4505.60-4517.00 (width 11.40, ATR15 8.52) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4517.00  [alert_id=2026-05-21-UP]
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4505.50  SL 4514.02  TP 4475.68  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4505.50 -> exit 4514.02  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4515.00-4522.90 (width 7.90, ATR15 7.01) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4522.90  [alert_id=2026-05-22-UP]
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4528.00  SL 4520.99  TP 4552.52  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4528.00 -> exit 4520.99  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4500.90-4501.30 (width 0.40, ATR15 1.47) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4502.00  SL 4500.53  TP 4507.15  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4502.00 -> exit 4507.15  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4533.10-4534.70 (width 1.60, ATR15 1.82) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4533.10  [alert_id=2026-05-24-DN]
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4535.40  SL 4533.58  TP 4541.77  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4535.40 -> exit 4533.58  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4556.20-4565.10 (width 8.90, ATR15 4.94) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4556.20  [alert_id=2026-05-25-DN]
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4565.10  [alert_id=2026-05-25-UP]
+[2026-09-26 10:44:52 UTC] Range set: 4502.70-4511.50 (width 8.80, ATR15 8.53) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4512.20  SL 4503.67  TP 4542.06  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4512.20 -> exit 4503.67  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4453.10-4467.40 (width 14.30, ATR15 9.84) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4453.10  [alert_id=2026-05-27-DN]
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4452.70  SL 4462.54  TP 4418.24  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4452.70 -> exit 4418.24  result=TP  R=3.50  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4386.30-4403.20 (width 16.90, ATR15 7.68) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:52 UTC] Range set: 4506.20-4514.40 (width 8.20, ATR15 8.19) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4504.20  SL 4512.39  TP 4475.53  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4504.20 -> exit 4512.39  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4527.70-4529.10 (width 1.40, ATR15 2.19) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4527.40  SL 4529.59  TP 4519.75  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4527.40 -> exit 4521.70  result=FLAT  R=2.61  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4531.00-4532.20 (width 1.20, ATR15 1.50) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4530.80  SL 4532.30  TP 4525.56  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4530.80 -> exit 4525.56  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4490.90-4497.80 (width 6.90, ATR15 6.35) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4500.10  SL 4493.75  TP 4522.34  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4500.10 -> exit 4493.75  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4512.30-4522.80 (width 10.50, ATR15 5.39) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> SELL SIGNAL  entry~4511.80  SL 4517.19  TP 4492.93  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  SELL entry 4511.80 -> exit 4492.93  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4441.40-4449.50 (width 8.10, ATR15 10.24) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4449.50  [alert_id=2026-06-03-UP]
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4449.80  SL 4439.56  TP 4485.63  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4449.80 -> exit 4439.56  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4492.30-4497.10 (width 4.80, ATR15 9.67) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4492.30  [alert_id=2026-06-04-DN]
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4498.30  SL 4488.63  TP 4532.14  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4498.30 -> exit 4488.63  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:52 UTC] Range set: 4429.10-4457.20 (width 28.10, ATR15 5.39) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:52 UTC] Range set: 4290.60-4293.50 (width 2.90, ATR15 3.61) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4293.50  [alert_id=2026-06-06-UP]
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4293.60  SL 4289.99  TP 4306.22  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4293.60 -> exit 4289.99  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4301.40-4303.20 (width 1.80, ATR15 3.64) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4301.40  [alert_id=2026-06-07-DN]
+[2026-09-26 10:44:52 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4303.20  [alert_id=2026-06-07-UP]
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4303.30  SL 4299.66  TP 4316.05  (had_alert=True)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4303.30 -> exit 4299.66  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:52 UTC] Range set: 4317.00-4324.10 (width 7.10, ATR15 11.96) -> TRADEABLE
+[2026-09-26 10:44:52 UTC] >>> BUY SIGNAL  entry~4326.60  SL 4314.64  TP 4368.46  (had_alert=False)
+[2026-09-26 10:44:52 UTC] PAPER TRADE CLOSED  BUY entry 4326.60 -> exit 4314.64  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4321.70-4328.20 (width 6.50, ATR15 6.30) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4329.20  SL 4322.90  TP 4351.25  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4329.20 -> exit 4322.90  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4138.30-4174.30 (width 36.00, ATR15 12.15) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:53 UTC] Range set: 4057.20-4073.20 (width 16.00, ATR15 8.76) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4074.70  SL 4065.94  TP 4105.38  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4074.70 -> exit 4065.94  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4184.90-4193.60 (width 8.70, ATR15 9.48) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4193.60  [alert_id=2026-06-12-UP]
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4184.90  [alert_id=2026-06-12-DN]
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4183.20  SL 4192.68  TP 4150.02  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4183.20 -> exit 4192.68  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4212.50-4213.90 (width 1.40, ATR15 1.00) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4213.90  [alert_id=2026-06-13-UP]
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4212.40  SL 4213.40  TP 4208.90  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4212.40 -> exit 4213.40  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4223.00-4224.70 (width 1.70, ATR15 2.47) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4222.50  SL 4224.97  TP 4213.85  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4222.50 -> exit 4213.85  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4323.80-4335.40 (width 11.60, ATR15 6.18) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4335.40  [alert_id=2026-06-15-UP]
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4337.50  SL 4331.32  TP 4359.15  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4337.50 -> exit 4331.32  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4329.50-4335.60 (width 6.10, ATR15 5.73) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4336.20  SL 4330.47  TP 4356.25  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4336.20 -> exit 4330.47  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4310.20-4318.60 (width 8.40, ATR15 4.88) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4318.70  SL 4313.82  TP 4335.77  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4318.70 -> exit 4313.82  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4232.40-4248.50 (width 16.10, ATR15 9.46) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4232.40  [alert_id=2026-06-18-DN]
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4248.80  SL 4239.34  TP 4281.90  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4248.80 -> exit 4239.34  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4139.70-4145.60 (width 5.90, ATR15 6.62) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4145.60  [alert_id=2026-06-19-UP]
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4139.70  [alert_id=2026-06-19-DN]
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4150.80  SL 4144.18  TP 4173.98  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4150.80 -> exit 4173.98  result=TP  R=3.50  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4151.80-4153.30 (width 1.50, ATR15 1.38) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4151.50  SL 4152.88  TP 4146.68  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4151.50 -> exit 4146.68  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4152.60-4153.50 (width 0.90, ATR15 2.42) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4154.40  SL 4151.98  TP 4162.88  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4154.40 -> exit 4156.50  result=FLAT  R=0.87  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4195.90-4201.40 (width 5.50, ATR15 6.63) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4195.60  SL 4202.23  TP 4172.40  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4195.60 -> exit 4202.23  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4106.00-4113.50 (width 7.50, ATR15 8.57) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4106.00  [alert_id=2026-06-23-DN]
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4105.40  SL 4113.97  TP 4075.40  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4105.40 -> exit 4113.97  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4007.60-4021.20 (width 13.60, ATR15 9.91) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4007.60  [alert_id=2026-06-24-DN]
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4004.50  SL 4014.41  TP 3969.82  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4004.50 -> exit 3969.82  result=TP  R=3.50  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 3983.38-4010.90 (width 27.52, ATR15 6.77) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:53 UTC] Range set: 4036.60-4042.30 (width 5.70, ATR15 8.78) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4035.10  SL 4043.88  TP 4004.38  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4035.10 -> exit 4043.88  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4077.00-4078.70 (width 1.70, ATR15 0.99) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4076.30  SL 4077.29  TP 4072.85  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4076.30 -> exit 4077.29  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4073.20-4074.30 (width 1.10, ATR15 1.31) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4073.10  SL 4074.41  TP 4068.50  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4073.10 -> exit 4068.50  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4033.10-4042.50 (width 9.40, ATR15 9.24) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4042.50  [alert_id=2026-06-29-UP]
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4043.40  SL 4034.16  TP 4075.73  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4043.40 -> exit 4034.16  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4007.10-4016.60 (width 9.50, ATR15 6.20) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4007.10  [alert_id=2026-06-30-DN]
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4006.40  SL 4012.60  TP 3984.68  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4006.40 -> exit 4012.60  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4018.50-4026.90 (width 8.40, ATR15 8.40) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4026.90  [alert_id=2026-07-01-UP]
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4018.50  [alert_id=2026-07-01-DN]
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4014.30  SL 4022.70  TP 3984.90  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4014.30 -> exit 4022.70  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4061.04-4132.60 (width 71.56, ATR15 7.34) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:53 UTC] Range set: 4164.10-4169.30 (width 5.20, ATR15 5.76) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4169.30  [alert_id=2026-07-03-UP]
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4163.80  SL 4169.56  TP 4143.65  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4163.80 -> exit 4169.56  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4162.10-4162.40 (width 0.30, ATR15 1.53) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4162.00  SL 4163.53  TP 4156.63  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4162.00 -> exit 4163.53  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4165.60-4166.40 (width 0.80, ATR15 1.00) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4165.50  SL 4166.50  TP 4162.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4165.50 -> exit 4166.50  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4130.30-4136.90 (width 6.60, ATR15 5.44) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4127.00  SL 4132.44  TP 4107.96  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4127.00 -> exit 4132.44  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4153.10-4159.40 (width 6.30, ATR15 8.61) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4153.10  [alert_id=2026-07-07-DN]
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4159.40  [alert_id=2026-07-07-UP]
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4159.70  SL 4151.09  TP 4189.84  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4159.70 -> exit 4151.09  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4063.10-4069.00 (width 5.90, ATR15 11.90) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4069.30  SL 4057.40  TP 4110.96  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4069.30 -> exit 4057.40  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4098.10-4112.40 (width 14.30, ATR15 6.67) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:53 UTC] Range set: 4088.94-4098.00 (width 9.06, ATR15 6.63) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4088.94  [alert_id=2026-07-10-DN]
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4087.40  SL 4094.03  TP 4064.21  (had_alert=True)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4087.40 -> exit 4094.03  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:53 UTC] Range set: 4108.50-4109.10 (width 0.60, ATR15 0.93) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4108.40  SL 4109.33  TP 4105.15  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4108.40 -> exit 4109.33  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4094.90-4095.60 (width 0.70, ATR15 0.55) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> SELL SIGNAL  entry~4094.80  SL 4095.35  TP 4092.88  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  SELL entry 4094.80 -> exit 4092.88  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4051.00-4055.00 (width 4.00, ATR15 7.56) -> TRADEABLE
+[2026-09-26 10:44:53 UTC] >>> BUY SIGNAL  entry~4055.60  SL 4048.04  TP 4082.05  (had_alert=False)
+[2026-09-26 10:44:53 UTC] PAPER TRADE CLOSED  BUY entry 4055.60 -> exit 4048.04  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:53 UTC] Range set: 4026.00-4096.70 (width 70.70, ATR15 6.24) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 4036.00-4060.00 (width 24.00, ATR15 5.51) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 4008.00-4023.00 (width 15.00, ATR15 6.18) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 3975.00-3983.90 (width 8.90, ATR15 5.33) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~3974.00  SL 3979.33  TP 3955.36  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 3974.00 -> exit 3979.33  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4010.10-4010.50 (width 0.40, ATR15 0.43) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4010.10  [alert_id=2026-07-18-DN]
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4009.50  SL 4009.93  TP 4008.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4009.50 -> exit 4009.93  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4000.70-4002.20 (width 1.50, ATR15 0.97) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4002.20  [alert_id=2026-07-19-UP]
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4002.50  SL 4001.53  TP 4005.90  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4002.50 -> exit 4005.90  result=TP  R=3.50  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4007.80-4011.70 (width 3.90, ATR15 6.57) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4006.90  SL 4013.47  TP 3983.90  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4006.90 -> exit 4013.47  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4045.00-4055.30 (width 10.30, ATR15 5.31) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4045.00  [alert_id=2026-07-21-DN]
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4042.90  SL 4048.21  TP 4024.31  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4042.90 -> exit 4048.21  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4111.80-4122.00 (width 10.20, ATR15 5.64) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4109.24  SL 4114.88  TP 4089.51  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4109.24 -> exit 4114.88  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4057.10-4068.00 (width 10.90, ATR15 7.14) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4057.00  SL 4064.14  TP 4032.03  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4057.00 -> exit 4043.50  result=FLAT  R=1.89  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4046.40-4051.40 (width 5.00, ATR15 5.80) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4044.60  SL 4050.40  TP 4024.28  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4044.60 -> exit 4050.40  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4048.70-4049.10 (width 0.40, ATR15 0.75) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4049.20  SL 4048.45  TP 4051.82  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4049.20 -> exit 4051.82  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4055.50-4056.40 (width 0.90, ATR15 1.25) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4055.40  SL 4056.65  TP 4051.01  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4055.40 -> exit 4056.65  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4073.70-4079.90 (width 6.20, ATR15 6.10) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4073.70  [alert_id=2026-07-27-DN]
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4073.30  SL 4079.40  TP 4051.96  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4073.30 -> exit 4079.40  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4020.40-4029.90 (width 9.50, ATR15 6.71) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4029.90  [alert_id=2026-07-28-UP]
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4030.40  SL 4023.69  TP 4053.90  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4030.40 -> exit 4023.69  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4006.00-4019.40 (width 13.40, ATR15 4.08) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 4065.70-4080.60 (width 14.90, ATR15 7.30) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 4048.70-4056.40 (width 7.70, ATR15 5.74) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4048.30  SL 4054.04  TP 4028.20  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4048.30 -> exit 4054.04  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4052.00-4052.40 (width 0.40, ATR15 0.72) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4052.50  SL 4051.78  TP 4055.03  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4052.50 -> exit 4051.78  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4064.50-4064.80 (width 0.30, ATR15 0.84) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4064.88  SL 4064.04  TP 4067.81  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4064.88 -> exit 4064.04  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4050.00-4056.40 (width 6.40, ATR15 5.73) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4048.60  SL 4054.33  TP 4028.54  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4048.60 -> exit 4054.33  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4066.40-4084.10 (width 17.70, ATR15 9.31) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4066.40  [alert_id=2026-08-04-DN]
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4062.00  SL 4071.32  TP 4029.40  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4062.00 -> exit 4071.32  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4186.50-4198.00 (width 11.50, ATR15 11.13) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4184.50  SL 4195.63  TP 4145.55  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4184.50 -> exit 4195.63  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4250.60-4264.10 (width 13.50, ATR15 7.82) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4250.60  [alert_id=2026-08-06-DN]
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4249.80  SL 4257.62  TP 4222.42  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4249.80 -> exit 4257.62  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4295.10-4354.20 (width 59.10, ATR15 7.99) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 4335.40-4336.30 (width 0.90, ATR15 1.80) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4337.10  SL 4335.31  TP 4343.38  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4337.10 -> exit 4338.60  result=FLAT  R=0.84  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4346.40-4348.50 (width 2.10, ATR15 1.96) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4348.90  SL 4346.94  TP 4355.75  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4348.90 -> exit 4349.50  result=FLAT  R=0.31  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4316.90-4323.80 (width 6.90, ATR15 5.35) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4323.80  [alert_id=2026-08-10-UP]
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4324.10  SL 4318.75  TP 4342.82  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4324.10 -> exit 4318.75  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4384.80-4391.00 (width 6.20, ATR15 6.72) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4391.00  [alert_id=2026-08-11-UP]
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4391.50  SL 4384.78  TP 4415.02  (had_alert=True)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4391.50 -> exit 4384.78  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:54 UTC] Range set: 4385.00-4434.20 (width 49.20, ATR15 6.99) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 4377.60-4396.50 (width 18.90, ATR15 5.56) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 4372.50-4383.50 (width 11.00, ATR15 6.10) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4371.40  SL 4377.50  TP 4350.05  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4371.40 -> exit 4377.50  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4373.30-4373.90 (width 0.60, ATR15 0.93) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4373.10  SL 4374.03  TP 4369.85  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4373.10 -> exit 4374.03  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4373.90-4374.00 (width 0.10, ATR15 0.82) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4373.80  SL 4374.62  TP 4370.92  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4373.80 -> exit 4370.92  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4377.50-4386.50 (width 9.00, ATR15 5.63) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4376.70  SL 4382.33  TP 4356.99  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4376.70 -> exit 4382.33  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4387.70-4393.10 (width 5.40, ATR15 5.39) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> SELL SIGNAL  entry~4387.50  SL 4392.89  TP 4368.65  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  SELL entry 4387.50 -> exit 4392.89  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:54 UTC] Range set: 4366.50-4408.50 (width 42.00, ATR15 5.50) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:54 UTC] Range set: 4441.50-4452.90 (width 11.40, ATR15 7.71) -> TRADEABLE
+[2026-09-26 10:44:54 UTC] >>> BUY SIGNAL  entry~4454.50  SL 4446.79  TP 4481.48  (had_alert=False)
+[2026-09-26 10:44:54 UTC] PAPER TRADE CLOSED  BUY entry 4454.50 -> exit 4481.48  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4555.10-4574.30 (width 19.20, ATR15 10.06) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4574.30  [alert_id=2026-08-21-UP]
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4575.50  SL 4565.44  TP 4610.70  (had_alert=True)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4575.50 -> exit 4565.44  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:55 UTC] Range set: 4585.10-4587.80 (width 2.70, ATR15 1.99) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4584.90  SL 4586.89  TP 4577.92  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4584.90 -> exit 4586.89  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4599.60-4600.50 (width 0.90, ATR15 1.90) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4600.50  [alert_id=2026-08-23-UP]
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4600.80  SL 4598.90  TP 4607.45  (had_alert=True)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4600.80 -> exit 4598.90  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:55 UTC] Range set: 4637.10-4655.20 (width 18.10, ATR15 8.84) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:55 UTC] Range set: 4620.20-4627.40 (width 7.20, ATR15 6.96) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4628.40  SL 4621.44  TP 4652.77  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4628.40 -> exit 4621.44  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4605.70-4628.20 (width 22.50, ATR15 6.37) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:55 UTC] Range set: 4581.00-4589.30 (width 8.30, ATR15 7.96) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4580.40  SL 4588.36  TP 4552.54  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4580.40 -> exit 4588.36  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4581.10-4594.60 (width 13.50, ATR15 5.72) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:55 UTC] Range set: 4456.20-4456.40 (width 0.20, ATR15 1.31) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4457.20  SL 4455.89  TP 4461.80  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4457.20 -> exit 4455.89  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4462.30-4463.00 (width 0.70, ATR15 0.89) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4461.90  SL 4462.79  TP 4458.80  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4461.90 -> exit 4462.79  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4439.70-4447.80 (width 8.10, ATR15 6.31) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4439.60  SL 4445.91  TP 4417.53  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4439.60 -> exit 4445.91  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4359.50-4375.20 (width 15.70, ATR15 8.47) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4359.00  SL 4367.47  TP 4329.35  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4359.00 -> exit 4367.47  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4340.40-4350.80 (width 10.40, ATR15 8.09) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4350.90  SL 4342.81  TP 4379.23  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4350.90 -> exit 4342.81  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4451.10-4481.90 (width 30.80, ATR15 6.99) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:55 UTC] Range set: 4384.80-4479.20 (width 94.40, ATR15 5.58) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:55 UTC] Range set: 4431.60-4432.00 (width 0.40, ATR15 0.63) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4432.30  SL 4431.67  TP 4434.50  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4432.30 -> exit 4431.67  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4427.20-4427.70 (width 0.50, ATR15 1.49) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4426.70  SL 4428.19  TP 4421.50  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4426.70 -> exit 4421.50  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4393.60-4398.00 (width 4.40, ATR15 6.57) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4398.50  SL 4391.93  TP 4421.50  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4398.50 -> exit 4410.00  result=FLAT  R=1.75  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4399.40-4408.70 (width 9.30, ATR15 8.06) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4398.50  SL 4406.56  TP 4370.30  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4398.50 -> exit 4406.56  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4392.60-4398.20 (width 5.60, ATR15 6.54) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4400.60  SL 4394.06  TP 4423.48  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4400.60 -> exit 4423.48  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4329.30-4376.40 (width 47.10, ATR15 8.12) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:55 UTC] Range set: 4300.80-4358.00 (width 57.20, ATR15 7.04) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:55 UTC] Range set: 4353.20-4353.60 (width 0.40, ATR15 0.55) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4354.80  SL 4354.25  TP 4356.73  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4354.80 -> exit 4356.73  result=TP  R=3.50  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4351.50-4352.10 (width 0.60, ATR15 1.34) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4350.80  SL 4352.14  TP 4346.10  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4350.80 -> exit 4352.14  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4284.00-4300.50 (width 16.50, ATR15 8.85) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4284.00  [alert_id=2026-09-14-DN]
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4280.80  SL 4289.65  TP 4249.81  (had_alert=True)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4280.80 -> exit 4289.65  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:55 UTC] Range set: 4277.40-4289.40 (width 12.00, ATR15 5.92) -> SKIPPED (range too wide vs ATR)
+[2026-09-26 10:44:55 UTC] Range set: 4337.80-4346.90 (width 9.10, ATR15 6.48) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4347.40  SL 4340.92  TP 4370.08  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4347.40 -> exit 4340.92  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4358.50-4375.90 (width 17.40, ATR15 9.32) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4355.90  SL 4365.22  TP 4323.28  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4355.90 -> exit 4365.22  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4353.20-4368.00 (width 14.80, ATR15 7.75) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4368.00  [alert_id=2026-09-18-UP]
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4368.80  SL 4361.05  TP 4395.93  (had_alert=True)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4368.80 -> exit 4361.05  result=SL  R=-1.00  (had_alert=True)
+[2026-09-26 10:44:55 UTC] Range set: 4365.90-4366.60 (width 0.70, ATR15 0.64) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4365.70  SL 4366.34  TP 4363.45  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4365.70 -> exit 4366.34  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4359.40-4360.00 (width 0.60, ATR15 0.96) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4359.40  [alert_id=2026-09-20-DN]
+[2026-09-26 10:44:55 UTC] Range set: 4350.20-4358.30 (width 8.10, ATR15 7.00) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4358.80  SL 4351.80  TP 4383.31  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4358.80 -> exit 4351.80  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4335.60-4342.90 (width 7.30, ATR15 9.48) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4332.10  SL 4341.58  TP 4298.93  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4332.10 -> exit 4341.58  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4305.20-4312.76 (width 7.56, ATR15 5.48) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> SELL SIGNAL  entry~4304.20  SL 4309.68  TP 4285.02  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  SELL entry 4304.20 -> exit 4309.68  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:55 UTC] Range set: 4263.40-4271.20 (width 7.80, ATR15 8.91) -> TRADEABLE
+[2026-09-26 10:44:55 UTC] >>> BUY SIGNAL  entry~4271.30  SL 4262.40  TP 4302.47  (had_alert=False)
+[2026-09-26 10:44:55 UTC] PAPER TRADE CLOSED  BUY entry 4271.30 -> exit 4262.40  result=SL  R=-1.00  (had_alert=False)
+[2026-09-26 10:44:56 UTC] Range set: 4292.40-4299.50 (width 7.10, ATR15 7.07) -> TRADEABLE
+[2026-09-26 10:44:56 UTC] >>> SELL SIGNAL  entry~4291.40  SL 4298.47  TP 4266.66  (had_alert=False)
+[2026-09-26 10:44:56 UTC] PAPER TRADE CLOSED  SELL entry 4291.40 -> exit 4298.47  result=SL  R=-1.00  (had_alert=False)
