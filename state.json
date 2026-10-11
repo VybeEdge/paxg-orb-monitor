@@ -1,5 +1,5 @@
 {
-  "last_bar_time": 1791732720,
+  "last_bar_time": 1791747660,
   "tiers": {
     "100": {
       "balance": 100.27045723918297,
@@ -46,9 +46,9 @@
   "alerted_up": false,
   "alerted_dn": false,
   "closes_before": [
-    4185.2,
-    4185.1,
-    4185.1
+    4189.7,
+    4190.1,
+    4190.1
   ],
   "open_trade": null
 }
