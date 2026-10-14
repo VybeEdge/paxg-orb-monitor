@@ -48,3 +48,4 @@
 [2026-10-13 16:16:03 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4180.60  [alert_id=2026-10-13-DN]
 [2026-10-13 16:16:03 UTC] >>> SELL SIGNAL  entry~4180.10  SL 4184.80  TP 4163.66  (had_alert=True)
 [2026-10-13 16:16:03 UTC] PAPER TRADE CLOSED  SELL entry 4180.10 -> exit 4184.80  result=SL  R=-1.00  (had_alert=True)
+[2026-10-14 15:18:05 UTC] Range set: 4115.40-4154.50 (width 39.10, ATR15 5.10) -> SKIPPED (range too wide vs ATR)
