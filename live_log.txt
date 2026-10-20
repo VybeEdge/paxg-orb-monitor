@@ -64,3 +64,6 @@
 [2026-10-19 17:00:34 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 4159.70  [alert_id=2026-10-19-UP]
 [2026-10-19 17:00:34 UTC] >>> SELL SIGNAL  entry~4156.00  SL 4161.10  TP 4138.16  (had_alert=False)
 [2026-10-19 17:00:34 UTC] PAPER TRADE CLOSED  SELL entry 4156.00 -> exit 4161.10  result=SL  R=-1.00  (had_alert=False)
+[2026-10-20 15:08:07 UTC] Range set: 4115.28-4123.40 (width 8.12, ATR15 5.76) -> TRADEABLE
+[2026-10-20 15:08:07 UTC] >>> BUY SIGNAL  entry~4125.50  SL 4119.74  TP 4145.67  (had_alert=False)
+[2026-10-20 15:08:07 UTC] PAPER TRADE CLOSED  BUY entry 4125.50 -> exit 4119.74  result=SL  R=-1.00  (had_alert=False)
