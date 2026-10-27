@@ -1,5 +1,5 @@
 {
-  "last_bar_time": 1793062560,
+  "last_bar_time": 1793081280,
   "tiers": {
     "100": {
       "balance": 93.85359761737614,
@@ -37,18 +37,18 @@
   "wins_with_alert": 0,
   "trades_without_alert": 23,
   "wins_without_alert": 5,
-  "day": "2026-10-26",
-  "range_high": 4036.0,
-  "range_low": 4030.0,
-  "day_atr": 4.093571428571457,
-  "range_ok": true,
-  "traded_today": true,
+  "day": "2026-10-27",
+  "range_high": null,
+  "range_low": null,
+  "day_atr": null,
+  "range_ok": false,
+  "traded_today": false,
   "alerted_up": false,
   "alerted_dn": false,
   "closes_before": [
-    4020.3,
-    4021.0,
-    4019.5
+    4017.0,
+    4017.7,
+    4020.0
   ],
   "open_trade": null
 }
