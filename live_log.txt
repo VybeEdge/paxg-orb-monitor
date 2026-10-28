@@ -93,3 +93,4 @@
 [2026-10-28 14:02:03 UTC] Range set: 4055.00-4058.90 (width 3.90, ATR15 4.79) -> TRADEABLE
 [2026-10-28 14:02:03 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 4055.00  [alert_id=2026-10-28-DN]
 [2026-10-28 14:02:03 UTC] >>> SELL SIGNAL  entry~4054.60  SL 4059.39  TP 4037.85  (had_alert=True)
+[2026-10-28 19:29:39 UTC] PAPER TRADE CLOSED  SELL entry 4054.60 -> exit 4037.85  result=TP  R=3.50  (had_alert=True)
