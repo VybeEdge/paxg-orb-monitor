@@ -115,3 +115,4 @@
 [2026-11-05 18:13:06 UTC] Range set: 4098.90-4109.50 (width 10.60, ATR15 5.87) -> TRADEABLE
 [2026-11-05 18:13:06 UTC] >>> BUY SIGNAL  entry~4110.30  SL 4104.43  TP 4130.85  (had_alert=False)
 [2026-11-05 18:13:06 UTC] PAPER TRADE CLOSED  BUY entry 4110.30 -> exit 4104.43  result=SL  R=-1.00  (had_alert=False)
+[2026-11-06 18:26:37 UTC] Range set: 4010.00-4050.09 (width 40.09, ATR15 6.89) -> SKIPPED (range too wide vs ATR)
