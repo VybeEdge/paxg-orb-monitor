@@ -143,3 +143,6 @@
 [2026-11-16 19:48:25 UTC] >>> SELL SIGNAL  entry~3851.70  SL 3857.99  TP 3829.68  (had_alert=False)
 [2026-11-16 19:48:25 UTC] PAPER TRADE CLOSED  SELL entry 3851.70 -> exit 3857.99  result=SL  R=-1.00  (had_alert=False)
 [2026-11-17 19:53:45 UTC] Range set: 3830.10-3848.80 (width 18.70, ATR15 6.14) -> SKIPPED (range too wide vs ATR)
+[2026-11-18 18:53:37 UTC] Range set: 3762.70-3775.10 (width 12.40, ATR15 9.26) -> TRADEABLE
+[2026-11-18 18:53:37 UTC] >>> BUY SIGNAL  entry~3775.60  SL 3766.34  TP 3808.01  (had_alert=False)
+[2026-11-18 18:53:37 UTC] PAPER TRADE CLOSED  BUY entry 3775.60 -> exit 3766.34  result=SL  R=-1.00  (had_alert=False)
