@@ -1,5 +1,5 @@
 # PAXGUSD ORB - live forward-test summary
-Last updated: 2026-11-22 10:58:27 UTC
+Last updated: 2026-11-22 18:25:21 UTC
 **Provisional settings copied from COMEX-gold backtest - not yet separately validated on PAXGUSD. Paper trading only, no real money involved. Checked on a schedule (see workflow) - notification lag applies.**
 ## Early-warning indicator accuracy
 - Alerts fired: 8
@@ -7,15 +7,15 @@ Last updated: 2026-11-22 10:58:27 UTC
 - Follow-through rate: 100.0%
 
 ## Trades (paper)
-- Total: 45  |  Wins: 13  |  Losses: 32
-- Win rate: 28.9%
-- Total R: 11.01  |  Avg R/trade: 0.245
+- Total: 46  |  Wins: 13  |  Losses: 33
+- Win rate: 28.3%
+- Total R: 10.01  |  Avg R/trade: 0.218
 - Trades WITH a prior alert: 5, win rate 20.0%
-- Trades WITHOUT a prior alert: 40, win rate 30.0%
+- Trades WITHOUT a prior alert: 41, win rate 29.3%
 
 ## Simulated account balances (1% risk per trade, compounding)
 | Starting balance | Current balance | Return | Max drawdown | Trades | Win rate |
 |---|---|---|---|---|---|
-| $100 | $110.65 | +10.65% | -11.50% | 45 | 28.9% |
-| $1,000 | $1,106.52 | +10.65% | -11.50% | 45 | 28.9% |
-| $10,000 | $11,065.24 | +10.65% | -11.50% | 45 | 28.9% |
+| $100 | $109.55 | +9.55% | -11.50% | 46 | 28.3% |
+| $1,000 | $1,095.46 | +9.55% | -11.50% | 46 | 28.3% |
+| $10,000 | $10,954.59 | +9.55% | -11.50% | 46 | 28.3% |
