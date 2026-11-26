@@ -1,9 +1,9 @@
 # PAXGUSD ORB - live forward-test summary
-Last updated: 2026-11-26 05:30:39 UTC
+Last updated: 2026-11-26 15:42:22 UTC
 **Provisional settings copied from COMEX-gold backtest - not yet separately validated on PAXGUSD. Paper trading only, no real money involved. Checked on a schedule (see workflow) - notification lag applies.**
 ## Early-warning indicator accuracy
-- Alerts fired: 8
-- Resolved so far: 5 (followed by real breakout: 5, not followed: 0)
+- Alerts fired: 10
+- Resolved so far: 6 (followed by real breakout: 6, not followed: 0)
 - Follow-through rate: 100.0%
 
 ## Trades (paper)
