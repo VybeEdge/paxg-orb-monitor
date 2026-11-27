@@ -1,39 +1,39 @@
 {
-  "last_bar_time": 1795707660,
+  "last_bar_time": 1795737720,
   "tiers": {
     "100": {
-      "balance": 107.36591940955874,
+      "balance": 106.29226021546316,
       "peak": 111.77010761220916,
       "max_dd_pct": -11.501679147772238,
-      "trades": 48,
+      "trades": 49,
       "wins": 13,
-      "losses": 35
+      "losses": 36
     },
     "1000": {
-      "balance": 1073.659194095587,
+      "balance": 1062.9226021546312,
       "peak": 1117.7010761220913,
       "max_dd_pct": -11.501679147772258,
-      "trades": 48,
+      "trades": 49,
       "wins": 13,
-      "losses": 35
+      "losses": 36
     },
     "10000": {
-      "balance": 10736.59194095587,
+      "balance": 10629.226021546312,
       "peak": 11177.01076122091,
       "max_dd_pct": -11.501679147772299,
-      "trades": 48,
+      "trades": 49,
       "wins": 13,
-      "losses": 35
+      "losses": 36
     }
   },
   "alerts_total": 10,
   "alerts_followed": 6,
   "alerts_not_followed": 0,
-  "trades_total": 48,
+  "trades_total": 49,
   "trades_wins": 13,
-  "trades_losses": 35,
-  "sum_R": 8.006759672083385,
-  "trades_with_alert": 5,
+  "trades_losses": 36,
+  "sum_R": 7.006759672083385,
+  "trades_with_alert": 6,
   "wins_with_alert": 1,
   "trades_without_alert": 43,
   "wins_without_alert": 12,
@@ -46,16 +46,9 @@
   "alerted_up": true,
   "alerted_dn": true,
   "closes_before": [
-    3564.6,
-    3562.9,
-    3562.6
+    3563.5,
+    3564.8,
+    3564.2
   ],
-  "open_trade": {
-    "side": 1,
-    "entry": 3567.72,
-    "sl": 3559.5271428571427,
-    "tp": 3596.3949999999995,
-    "entry_time": "2026-11-26T14:04:00Z",
-    "had_alert": true
-  }
+  "open_trade": null
 }

@@ -168,3 +168,4 @@
 [2026-11-26 15:42:22 UTC] 🔔 ALERT FIRED - WATCH SELL  approaching 3561.30  [alert_id=2026-11-26-DN]
 [2026-11-26 15:42:22 UTC] 🔔 ALERT FIRED - WATCH BUY  approaching 3566.40  [alert_id=2026-11-26-UP]
 [2026-11-26 15:42:22 UTC] >>> BUY SIGNAL  entry~3567.72  SL 3559.53  TP 3596.39  (had_alert=True)
+[2026-11-27 00:03:32 UTC] PAPER TRADE CLOSED  BUY entry 3567.72 -> exit 3559.53  result=SL  R=-1.00  (had_alert=True)
